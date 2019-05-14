@@ -14,7 +14,7 @@ public class SexManagementSystemApplication {
         SpringApplication.run(SexManagementSystemApplication.class, args);
     }
 
-    @RequestMapping(value = "hello",method = RequestMethod.GET)
+    @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String hello(){
 
 //		model.addAttribute("name", name);
