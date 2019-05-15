@@ -4,6 +4,7 @@ import com.example.demo.tool.DBManager;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.sql.ResultSet;
 
 @RestController
@@ -12,10 +13,10 @@ import java.sql.ResultSet;
 public class LoginController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public LoginBean login(@RequestBody JSs js) {
-        String userName = js.getId();
-        String password = js.getPasswords();
-        LoginBean loginBean = new LoginBean();
+    public LoginResponse login(@RequestBody LoginRequest loginRequest, HttpServletResponse httpServletResponse) {
+        String userName = loginRequest.getId();
+        String password = loginRequest.getPasswords();
+        LoginResponse loginResponse = new LoginResponse();
         String sql = "SELECT password FROM teachers where account = " + userName + ";";
         try {
             DBManager dbManager = new DBManager(sql);
@@ -28,17 +29,17 @@ public class LoginController {
             if (DBpassword.equals(password)) {
                 result.close();
                 dbManager.close();
-                loginBean.setResult(true);
-                return loginBean;
+                loginResponse.setResult(true);
+                return loginResponse;
             }
         } catch (Exception e) {
-            loginBean.setResult(false);
-            loginBean.setStatus(e.toString());
-            return loginBean;
+            loginResponse.setResult(false);
+            loginResponse.setStatus(e.toString());
+            return loginResponse;
         }
-        loginBean.setResult(false);
-        loginBean.setStatus("密码错误");
-        return loginBean;
+        loginResponse.setResult(false);
+        loginResponse.setStatus("密码错误");
+        return loginResponse;
     }
 
     private String getStatus(int number) {
@@ -57,7 +58,7 @@ public class LoginController {
     }
 }
 
-class JSs {
+class LoginRequest {
     private String id;
     private String passwords;
 
@@ -78,7 +79,7 @@ class JSs {
     }
 }
 
-class LoginBean {
+class LoginResponse {
     private boolean result;
     private String status;
 
