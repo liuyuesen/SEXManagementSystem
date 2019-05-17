@@ -16,7 +16,7 @@ import java.sql.ResultSet;
 public class LoginController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public LoginResponse login(@RequestBody LoginRequest loginRequest, HttpServletResponse httpServletResponse) {
+    public LoginResponse login(@RequestBody LoginRequest loginRequest) {
         String account = loginRequest.getAccount();
         String password = loginRequest.getPassword();
         LoginResponse loginResponse = new LoginResponse();
@@ -27,12 +27,12 @@ public class LoginController {
         object.put("account", 123456);
         try {
             loginArray = SQLOperation.select(sql);
-            if (loginArray.getJSONObject(0).get("password").equals(password)) {
-                loginResponse.setResult(true);
-                return loginResponse;
-            } else if (loginArray.getJSONObject(0).get("password") == null) {
+            if (loginArray.isEmpty()) {
                 loginResponse.setResult(false);
                 loginResponse.setStatus("账号不存在");
+                return loginResponse;
+            } else if (loginArray.getJSONObject(0).get("password").equals(password)) {
+                loginResponse.setResult(true);
                 return loginResponse;
             } else {
                 loginResponse.setResult(false);
@@ -45,26 +45,20 @@ public class LoginController {
             return loginResponse;
         }
     }
-
-    private String getStatus(int number) {
-        switch (number) {
-            case 0:
-                return "staff";
-            case 1:
-                return "department_manager";
-            case 2:
-                return "deputy_general_manager";
-            case 3:
-                return "general_manager";
-            default:
-                return "error";
-        }
-    }
 }
 
 class LoginRequest {
     private String account;
     private String password;
+
+    public LoginRequest() {
+
+    }
+
+    public LoginRequest(String account, String password) {
+        this.account = account;
+        this.password = password;
+    }
 
     public void setAccount(String account) {
         this.account = account;
@@ -81,11 +75,27 @@ class LoginRequest {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public boolean equals(LoginRequest loginRequest) {
+        if ((this.account.equals(loginRequest.account)) && (this.password.equals(loginRequest.password))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
-class LoginResponse {
+class LoginResponse extends Object {
     private boolean result;
     private String status;
+
+    public LoginResponse() {
+    }
+
+    public LoginResponse(boolean result, String status) {
+        this.result = result;
+        this.status = status;
+    }
 
     public void setResult(boolean result) {
         this.result = result;
@@ -103,4 +113,14 @@ class LoginResponse {
         return result;
     }
 
+
+    public boolean equals(LoginResponse loginResponse) {
+        if (this.result == loginResponse.result && this.status == null) {
+            return true;
+        } else if ((this.result == loginResponse.result) && (this.status.equals(loginResponse.status))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

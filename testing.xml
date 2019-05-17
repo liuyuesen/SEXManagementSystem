@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="suite1" parallel="true">
+    <test name="TestLoginController.create" preserve-order="true">
+        <!--<classes>-->
+            <!--<class name="com.example.demo.tool.SqlOperationTest" />-->
+        <!--</classes>-->
+        <classes>
+            <class name="com.example.demo.Login.LoginControllerTest" />
+        </classes>
+    </test>
+</suite>
