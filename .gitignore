@@ -23,3 +23,9 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### test-output ###
+/test-output/
+
+### Jacoco ###
+/target/site/jacoco/
