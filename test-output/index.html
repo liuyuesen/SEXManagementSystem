@@ -165,6 +165,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;suite1&quot; parallel=&quot;true&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;TestLoginController.create&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.example.demo.Login.LoginControllerTest&quot;/&gt;
@@ -211,20 +215,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testLoginAccountFall')
 data.setCell(0, 2, 'com.example.demo.Login.LoginControllerTest')
-data.setCell(0, 3, 2386);
+data.setCell(0, 3, 2187);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginPasswordFall')
+data.setCell(1, 1, 'testLoginRight')
 data.setCell(1, 2, 'com.example.demo.Login.LoginControllerTest')
-data.setCell(1, 3, 2359);
+data.setCell(1, 3, 2160);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLoginRight')
+data.setCell(2, 1, 'testLoginPasswordFall')
 data.setCell(2, 2, 'com.example.demo.Login.LoginControllerTest')
-data.setCell(2, 3, 2359);
+data.setCell(2, 3, 2160);
 window.suiteTableData['suite1']= { tableData: data, tableDiv: 'times-div-suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-suite1">
               </div> <!-- times-div-suite1 -->
             </div> <!-- times-div -->
@@ -257,47 +261,47 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextPrepareTestInstance</span>
-                <span class="method-start">12 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.demo.Login.LoginControllerTest.testLoginPasswordFall() throws java.lang.Exce...)</span>
-                <span class="method-start">281 ms</span>
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.demo.Login.LoginControllerTest.testLoginRight() throws java.lang.Exception)</span>
+                <span class="method-start">428 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.demo.Login.LoginControllerTest.testLoginRight() throws java.lang.Exception)</span>
-                <span class="method-start">281 ms</span>
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.example.demo.Login.LoginControllerTest.testLoginPasswordFall() throws java.lang.Exce...)</span>
+                <span class="method-start">428 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testLoginRight</span>
-                <span class="method-start">284 ms</span>
+                <span class="method-name">testLoginPasswordFall</span>
+                <span class="method-start">430 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testLoginPasswordFall</span>
-                <span class="method-start">284 ms</span>
+                <span class="method-name">testLoginRight</span>
+                <span class="method-start">430 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.example.demo.Login.LoginControllerTest.testLoginAccountFall() throws java.lang.Excep...)</span>
-                <span class="method-start">286 ms</span>
+                <span class="method-start">436 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginAccountFall</span>
-                <span class="method-start">287 ms</span>
+                <span class="method-start">441 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.example.demo.Login.LoginControllerTest.testLoginPasswordFall() throws java.lang.Exce...)</span>
-                <span class="method-start">2644 ms</span>
+                <span class="method-start">2590 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.example.demo.Login.LoginControllerTest.testLoginRight() throws java.lang.Exception)</span>
-                <span class="method-start">2644 ms</span>
+                <span class="method-start">2590 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.example.demo.Login.LoginControllerTest.testLoginAccountFall() throws java.lang.Excep...)</span>
-                <span class="method-start">2673 ms</span>
+                <span class="method-start">2628 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
-                <span class="method-start">2674 ms</span>
+                <span class="method-start">2629 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

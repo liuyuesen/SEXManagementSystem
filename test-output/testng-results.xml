@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="suite1" duration-ms="2685" started-at="2019-05-20T08:01:40Z" finished-at="2019-05-20T08:01:43Z">
+  <suite name="suite1" duration-ms="2692" started-at="2019-05-20T08:58:05Z" finished-at="2019-05-20T08:58:08Z">
     <groups>
     </groups>
-    <test name="TestLoginController.create" duration-ms="2685" started-at="2019-05-20T08:01:40Z" finished-at="2019-05-20T08:01:43Z">
+    <test name="TestLoginController.create" duration-ms="2692" started-at="2019-05-20T08:58:05Z" finished-at="2019-05-20T08:58:08Z">
       <class name="com.example.demo.Login.LoginControllerTest">
-        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="12" started-at="2019-05-20T16:01:40Z" finished-at="2019-05-20T16:01:40Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="16" started-at="2019-05-20T16:58:05Z" finished-at="2019-05-20T16:58:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="265" started-at="2019-05-20T16:01:40Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2019-05-20T16:01:41Z">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="408" started-at="2019-05-20T16:58:05Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2019-05-20T16:58:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2019-05-20T16:01:41Z" finished-at="2019-05-20T16:01:41Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2019-05-20T16:58:05Z" finished-at="2019-05-20T16:58:05Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="3" started-at="2019-05-20T16:01:41Z" finished-at="2019-05-20T16:01:41Z">
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="2" started-at="2019-05-20T16:58:05Z" finished-at="2019-05-20T16:58:05Z">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="testLoginPasswordFall()[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="testLoginPasswordFall" duration-ms="2359" started-at="2019-05-20T16:01:41Z" finished-at="2019-05-20T16:01:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginPasswordFall -->
-        <test-method status="PASS" signature="testLoginRight()[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="testLoginRight" duration-ms="2359" started-at="2019-05-20T16:01:41Z" finished-at="2019-05-20T16:01:43Z">
+        <test-method status="PASS" signature="testLoginRight()[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="testLoginRight" duration-ms="2160" started-at="2019-05-20T16:58:05Z" finished-at="2019-05-20T16:58:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginRight -->
-        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2019-05-20T16:01:41Z" finished-at="2019-05-20T16:01:41Z">
+        <test-method status="PASS" signature="testLoginPasswordFall()[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="testLoginPasswordFall" duration-ms="2160" started-at="2019-05-20T16:58:05Z" finished-at="2019-05-20T16:58:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPasswordFall -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="5" started-at="2019-05-20T16:58:05Z" finished-at="2019-05-20T16:58:05Z">
           <params>
             <param index="0">
               <value>
@@ -56,22 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method status="PASS" signature="testLoginAccountFall()[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="testLoginAccountFall" duration-ms="2386" started-at="2019-05-20T16:01:41Z" finished-at="2019-05-20T16:01:43Z">
+        <test-method status="PASS" signature="testLoginAccountFall()[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="testLoginAccountFall" duration-ms="2187" started-at="2019-05-20T16:58:05Z" finished-at="2019-05-20T16:58:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginAccountFall -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2019-05-20T16:01:43Z" finished-at="2019-05-20T16:01:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.example.demo.Login.LoginControllerTest.testLoginPasswordFall() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2019-05-20T16:01:43Z" finished-at="2019-05-20T16:01:43Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2019-05-20T16:58:08Z" finished-at="2019-05-20T16:58:08Z">
           <params>
             <param index="0">
               <value>
@@ -82,7 +71,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2019-05-20T16:01:43Z" finished-at="2019-05-20T16:01:43Z">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2019-05-20T16:58:08Z" finished-at="2019-05-20T16:58:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.example.demo.Login.LoginControllerTest.testLoginPasswordFall() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2019-05-20T16:58:08Z" finished-at="2019-05-20T16:58:08Z">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.example.demo.Login.LoginControllerTest@290d210d]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2019-05-20T16:01:43Z" finished-at="2019-05-20T16:01:43Z">
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.example.demo.Login.LoginControllerTest@4b5d6a01]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2019-05-20T16:58:08Z" finished-at="2019-05-20T16:58:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->
