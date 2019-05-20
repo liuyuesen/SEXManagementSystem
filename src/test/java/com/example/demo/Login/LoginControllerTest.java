@@ -11,10 +11,20 @@ import static org.testng.Assert.*;
 public class LoginControllerTest  extends AbstractTestNGSpringContextTests {
     LoginController loginController = new LoginController();
     @Test
-    public void testPlusCount() throws Exception {
+    public void testLogin() throws Exception {
         assertEquals(loginController.login(new LoginRequest("1301913704","980508Izwh")).equals( new LoginResponse(true,null)),true);
         assertEquals(loginController.login(new LoginRequest("123456","123456")).equals(new LoginResponse(false,"账号不存在")), true);
         assertEquals(loginController.login(new LoginRequest("1301913704","123456")).equals(new LoginResponse(false,"密码错误")), true);
+        assertEquals(loginController.login(new LoginRequest("123456","123456")).equals(new LoginResponse(false,"账号不存在")), true);
+    }
+
+    @Test
+    public void testLoginPasswordFall () throws Exception{
+        assertEquals(loginController.login(new LoginRequest("1301913704","123456")).equals(new LoginResponse(false,"密码错误")), true);
+    }
+
+    @Test
+    public void testLoginAccountFall () throws Exception{
         assertEquals(loginController.login(new LoginRequest("123456","123456")).equals(new LoginResponse(false,"账号不存在")), true);
     }
 }
